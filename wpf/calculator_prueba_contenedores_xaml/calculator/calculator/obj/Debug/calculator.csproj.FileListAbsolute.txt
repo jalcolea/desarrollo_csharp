@@ -1,0 +1,14 @@
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\bin\Debug\calculator.exe.config
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\bin\Debug\calculator.exe
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\bin\Debug\calculator.pdb
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator.csprojResolveAssemblyReference.cache
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\MainWindow.g.cs
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\App.g.cs
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator_MarkupCompile.cache
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator_MarkupCompile.lref
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\MainWindow.baml
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator.g.resources
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.Cache
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator.exe
+D:\JULK\practicas c#\wpf\calculator\calculator\calculator\obj\Debug\calculator.pdb

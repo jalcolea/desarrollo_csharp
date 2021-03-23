@@ -1,0 +1,6 @@
+D:\JULK\practicas c#\wcf\ejemplo_completo\service_library\bin\Debug\ejemplo_completo.dll.config
+D:\JULK\practicas c#\wcf\ejemplo_completo\service_library\bin\Debug\ejemplo_completo.dll
+D:\JULK\practicas c#\wcf\ejemplo_completo\service_library\bin\Debug\ejemplo_completo.pdb
+D:\JULK\practicas c#\wcf\ejemplo_completo\service_library\obj\Debug\servicelibrary.csprojResolveAssemblyReference.cache
+D:\JULK\practicas c#\wcf\ejemplo_completo\service_library\obj\Debug\ejemplo_completo.dll
+D:\JULK\practicas c#\wcf\ejemplo_completo\service_library\obj\Debug\ejemplo_completo.pdb

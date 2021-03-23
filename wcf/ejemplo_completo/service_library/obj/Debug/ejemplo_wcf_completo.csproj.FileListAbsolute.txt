@@ -1,0 +1,5 @@
+D:\JULK\practicas c#\wcf\ejemplo_completo\ejemplo_completo\bin\Debug\ejemplo_completo.dll.config
+D:\JULK\practicas c#\wcf\ejemplo_completo\ejemplo_completo\bin\Debug\ejemplo_completo.dll
+D:\JULK\practicas c#\wcf\ejemplo_completo\ejemplo_completo\bin\Debug\ejemplo_completo.pdb
+D:\JULK\practicas c#\wcf\ejemplo_completo\ejemplo_completo\obj\Debug\ejemplo_completo.dll
+D:\JULK\practicas c#\wcf\ejemplo_completo\ejemplo_completo\obj\Debug\ejemplo_completo.pdb
