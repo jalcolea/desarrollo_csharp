@@ -28,83 +28,102 @@
                FontSize="60"/>
         <Button x:Name="AcBtn" Content="AC"
                 Margin="5"
-                Grid.Row="1"/>
+                Grid.Row="1"
+                Click="AcBtn_Click"/>
         <Button x:Name="SignBtn" Content="+/-"
                 Margin="5"
                 Grid.Row="1"
-                Grid.Column="1"/>
+                Grid.Column="1"
+                Click="SignBtn_Click"/>
         <Button x:Name="PercentageBtn" Content="%"
                 Margin="5"
                 Grid.Row="1"
-                Grid.Column="2"/>
+                Grid.Column="2"
+                Click="PercentageBtn_Click"/>
         <Button x:Name="DivisionBtn" Content="/"
                 Margin="5"
                 Grid.Row="1"
-                Grid.Column="3"/>
+                Grid.Column="3"
+                Click="DivisionBtn_Click"/>
 				
         <Button x:Name="SevenBtn" Content="7"
                 Margin="5"
                 Grid.Row="2"
-                Grid.Column="0"/>
+                Grid.Column="0"
+                Click="SevenBtn_Click"/>
         <Button x:Name="EigthBtn" Content="8"
                 Margin="5"
                 Grid.Row="2"
-                Grid.Column="1"/>
+                Grid.Column="1"
+                Click="EigthBtn_Click"/>
         <Button x:Name="NineBtn" Content="9"
                 Margin="5"
                 Grid.Row="2"
-                Grid.Column="2"/>
+                Grid.Column="2"
+                Click="NineBtn_Click"/>
         <Button x:Name="MultiplicationBtn" Content="*"
                 Margin="5"
                 Grid.Row="2"
-                Grid.Column="3"/>
+                Grid.Column="3"
+                Click="MultiplicationBtn_Click"/>
 
         <Button x:Name="FourBtn" Content="4"
                 Margin="5"
                 Grid.Row="3"
-                Grid.Column="0"/>
+                Grid.Column="0"
+                Click="FourBtn_Click"/>
         <Button x:Name="FiveBtn" Content="5"
                 Margin="5"
                 Grid.Row="3"
-                Grid.Column="1"/>
+                Grid.Column="1"
+                Click="FiveBtn_Click"/>
         <Button x:Name="SixBtn" Content="6"
                 Margin="5"
                 Grid.Row="3"
-                Grid.Column="2"/>
+                Grid.Column="2"
+                Click="SixBtn_Click"/>
         <Button x:Name="MinusBtn" Content="-"
                 Margin="5"
                 Grid.Row="3"
-                Grid.Column="3"/>
+                Grid.Column="3"
+                Click="MinusBtn_Click"/>
 
         <Button x:Name="OneBtn" Content="1"
                 Margin="5"
                 Grid.Row="4"
-                Grid.Column="0"/>
+                Grid.Column="0"
+                Click="OneBtn_Click"/>
         <Button x:Name="TwoBtn" Content="2"
                 Margin="5"
                 Grid.Row="4"
-                Grid.Column="1"/>
+                Grid.Column="1"
+                Click="TwoBtn_Click"/>
         <Button x:Name="ThreeBtn" Content="3"
                 Margin="5"
                 Grid.Row="4"
-                Grid.Column="2"/>
+                Grid.Column="2"
+                Click="ThreeBtn_Click"/>
         <Button x:Name="PlusBtn" Content="+"
                 Margin="5"
                 Grid.Row="4"
-                Grid.Column="3"/>
+                Grid.Column="3"
+                Click="PlusBtn_Click"/>
 
         <Button x:Name="ZeroBtn" Content="0"
                 Margin="5"
                 Grid.Row="5"
-                Grid.ColumnSpan="2"/>
+                Grid.ColumnSpan="2"
+                Click="ZeroBtn_Click"/>
         <Button x:Name="DotBtn" Content="."
                 Margin="5"
                 Grid.Row="5"
-                Grid.Column="2"/>
+                Grid.Column="2"
+                Click="DotBtn_Click"/>
         <Button x:Name="EqualBtn" Content="="
                 Margin="5"
                 Grid.Row="5"
-                Grid.Column="3"/>
+                Grid.Column="3"
+                Click="EqualBtn_Click"/>
 
     </Grid>
 </Window>

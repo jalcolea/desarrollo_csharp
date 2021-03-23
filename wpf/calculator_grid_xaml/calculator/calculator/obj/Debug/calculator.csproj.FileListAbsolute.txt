@@ -26,3 +26,17 @@ D:\JULK\practicas c#\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\Ma
 D:\JULK\practicas c#\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.g.resources
 D:\JULK\practicas c#\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
 D:\JULK\practicas c#\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.Cache
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\bin\Debug\calculator.exe.config
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.exe
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.pdb
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\bin\Debug\calculator.exe
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\bin\Debug\calculator.pdb
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.csprojResolveAssemblyReference.cache
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\MainWindow.g.cs
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\App.g.cs
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator_MarkupCompile.cache
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator_MarkupCompile.lref
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\MainWindow.baml
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.g.resources
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
+D:\JULK\proyectos_desarrollo\desarrollo_csharp\wpf\calculator_grid_xaml\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.Cache
