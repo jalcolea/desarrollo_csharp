@@ -20,15 +20,26 @@ namespace calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Calculator calc;
+        private bool ResetScreen = false;
         public MainWindow()
         {
             InitializeComponent();
+            this.calc = new Calculator();
         //    ResultLbl.Content = "1";
         }
 
+        private void Operation (char type)
+        {
+            double result = calc.calculate(Convert.ToDouble(ResultLbl.Content), type);
+            ResultLbl.Content = result.ToString();
+            ResetScreen = true;
+        }
         private void AddContentToScreen(int number)
         {
-            if (Convert.ToInt16(ResultLbl.Content) == 0) ResultLbl.Content = "";
+            if (ResultLbl.Content.ToString() == "0") ResultLbl.Content = "";
+            if (ResetScreen) ResultLbl.Content = "";
+            ResetScreen = false;
             ResultLbl.Content += number.ToString();
         }
         private void AcBtn_Click(object sender, RoutedEventArgs e)
@@ -46,6 +57,7 @@ namespace calculator
 
         private void DivisionBtn_Click(object sender, RoutedEventArgs e)
         {
+            Operation(((Button)sender).Content.ToString()[0]);
         }
 
         private void SevenBtn_Click(object sender, RoutedEventArgs e)
@@ -65,7 +77,7 @@ namespace calculator
 
         private void MultiplicationBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Operation(((Button)sender).Content.ToString()[0]);
         }
 
         private void FourBtn_Click(object sender, RoutedEventArgs e)
@@ -85,7 +97,7 @@ namespace calculator
 
         private void MinusBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Operation(((Button)sender).Content.ToString()[0]);
         }
 
         private void OneBtn_Click(object sender, RoutedEventArgs e)
@@ -105,7 +117,7 @@ namespace calculator
 
         private void PlusBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Operation(((Button)sender).Content.ToString()[0]);
         }
 
         private void ZeroBtn_Click(object sender, RoutedEventArgs e)
@@ -120,7 +132,7 @@ namespace calculator
 
         private void EqualBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Operation(((Button)sender).Content.ToString()[0]);
         }
     }
 }
