@@ -26,7 +26,6 @@ namespace calculator
         {
             InitializeComponent();
             this.calc = new Calculator();
-        //    ResultLbl.Content = "1";
         }
 
         private void Operation (char type)
@@ -34,6 +33,16 @@ namespace calculator
             double result = calc.calculate(Convert.ToDouble(ResultLbl.Content), type);
             ResultLbl.Content = result.ToString();
             ResetScreen = true;
+        }
+
+        private void ChangeSignScreen()
+        {
+            Double tmp;
+            if (Double.TryParse(ResultLbl.Content.ToString(), out tmp))
+            {
+                tmp *= -1;
+                ResultLbl.Content = tmp.ToString();
+            }
         }
         private void AddContentToScreen(int number)
         {
@@ -49,10 +58,12 @@ namespace calculator
 
         private void SignBtn_Click(object sender, RoutedEventArgs e)
         {
+            ChangeSignScreen();
         }
 
         private void PercentageBtn_Click(object sender, RoutedEventArgs e)
         {
+            Operation(((Button)sender).Content.ToString()[0]);
         }
 
         private void DivisionBtn_Click(object sender, RoutedEventArgs e)

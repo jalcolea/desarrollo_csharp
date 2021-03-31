@@ -8,38 +8,41 @@ namespace calculator
 {
     class Calculator
     {
-        private char CurrentOperation = ' ';
+        private char LastOperation = ' ';
         private double PreviousNumber = 0;
-        private List<char> ValidOperations = new List<char> { '+','-','*','/','=' };
+        private List<char> ValidOperations = new List<char> {'+','-','*','/','=','%'};
 
         public double calculate (double number, char type)
         {
+            
             double CurrentNumber = number;
 
-            if (CurrentOperation != ' ')
+            if (type == '%')
             {
-                switch (CurrentOperation)
-                {
-                    case '+':
-                        CurrentNumber = PreviousNumber + number;
-                        break;
-                    case '-':
-                        CurrentNumber = PreviousNumber - number;
-                        break;
-                    case '*':
-                        CurrentNumber = PreviousNumber * number;
-                        break;
-                    case '/':
-                        CurrentNumber = PreviousNumber / number;
-                        break;
-                    
-                }
+                CurrentNumber = (PreviousNumber * number) / 100;
             }
-            if (ValidOperations.Contains(type))
+            switch (LastOperation)
             {
-                CurrentOperation = type;
-                PreviousNumber = CurrentNumber;
+                case '+':
+                    CurrentNumber = PreviousNumber + number;
+                    PreviousNumber = CurrentNumber;
+                    break;
+                case '-':
+                    CurrentNumber = PreviousNumber - number;
+                    PreviousNumber = CurrentNumber;
+                    break;
+                case '*':
+                    CurrentNumber = PreviousNumber * number;
+                    PreviousNumber = CurrentNumber;
+                    break;
+                case '/':
+                    CurrentNumber = PreviousNumber / number;
+                    PreviousNumber = CurrentNumber;
+                    break;
             }
+            LastOperation = type;
+            PreviousNumber = number;
+
             return CurrentNumber;
         }
     }
