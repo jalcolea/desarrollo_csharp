@@ -20,8 +20,11 @@ namespace calculator
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
+        private Dictionary<Key, Button> KeyButton;
+
         private Calculator calc;
         private bool ResetScreen = false;
         public MainWindow()
@@ -30,6 +33,19 @@ namespace calculator
             InitializeComponent();
             this.calc = new Calculator();
 
+        KeyButton = new Dictionary<Key, Button>()
+        {
+            {Key.D0,this.ZeroBtn},
+            {Key.D1,this.OneBtn},
+            {Key.D2,this.TwoBtn},
+            {Key.D3,this.ThreeBtn},
+            {Key.D4,this.FourBtn},
+            {Key.D5,this.FiveBtn},
+            {Key.D6,this.SixBtn},
+            {Key.D7,this.SevenBtn},
+            {Key.D8,this.EigthBtn},
+            {Key.D9,this.NineBtn}
+        };
         }
 
         private void Operation (char type)
@@ -121,40 +137,10 @@ namespace calculator
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            switch (e.Key)
+            if (KeyButton.ContainsKey(e.Key))
             {
-                case Key.D0:
-                    this.NumberBtn_Click(this.ZeroBtn, new RoutedEventArgs());
-                    break;
-                case Key.D1:
-                    this.NumberBtn_Click(this.OneBtn, new RoutedEventArgs());
-                    break;
-                case Key.D2:
-                    this.NumberBtn_Click(this.TwoBtn, new RoutedEventArgs());
-                    break;
-                case Key.D3:
-                    this.NumberBtn_Click(this.ThreeBtn, new RoutedEventArgs());
-                    break;
-                case Key.D4:
-                    this.NumberBtn_Click(this.FourBtn, new RoutedEventArgs());
-                    break;
-                case Key.D5:
-                    this.NumberBtn_Click(this.FiveBtn, new RoutedEventArgs());
-                    break;
-                case Key.D6:
-                    this.NumberBtn_Click(this.SixBtn, new RoutedEventArgs());
-                    break;
-                case Key.D7:
-                    this.NumberBtn_Click(this.SevenBtn, new RoutedEventArgs());
-                    break;
-                case Key.D8:
-                    this.NumberBtn_Click(this.EigthBtn, new RoutedEventArgs());
-                    break;
-                case Key.D9:
-                    this.NumberBtn_Click(this.NineBtn, new RoutedEventArgs());
-                    break;
+                this.NumberBtn_Click(KeyButton[e.Key], new RoutedEventArgs());
             }
-
         }
     }
 }
