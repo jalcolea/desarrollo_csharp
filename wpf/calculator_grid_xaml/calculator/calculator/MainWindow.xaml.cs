@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Globalization;
+using System.Threading;
 
 namespace calculator
 {
@@ -24,8 +26,10 @@ namespace calculator
         private bool ResetScreen = false;
         public MainWindow()
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-GB");
             InitializeComponent();
             this.calc = new Calculator();
+
         }
 
         private void Operation (char type)
@@ -54,6 +58,7 @@ namespace calculator
         private void AcBtn_Click(object sender, RoutedEventArgs e)
         {
             ResultLbl.Content = "0";
+            calc.reset();
         }
 
         private void SignBtn_Click(object sender, RoutedEventArgs e)
@@ -71,17 +76,7 @@ namespace calculator
             Operation(((Button)sender).Content.ToString()[0]);
         }
 
-        private void SevenBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
-        }
-
-        private void EigthBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
-        }
-
-        private void NineBtn_Click(object sender, RoutedEventArgs e)
+        private void NumberBtn_Click(object sender, RoutedEventArgs e)
         {
             AddContentToScreen(Convert.ToInt16((sender as Button).Content));
         }
@@ -91,39 +86,9 @@ namespace calculator
             Operation(((Button)sender).Content.ToString()[0]);
         }
 
-        private void FourBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
-        }
-
-        private void FiveBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
-        }
-
-        private void SixBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
-        }
-
         private void MinusBtn_Click(object sender, RoutedEventArgs e)
         {
             Operation(((Button)sender).Content.ToString()[0]);
-        }
-
-        private void OneBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
-        }
-
-        private void TwoBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
-        }
-
-        private void ThreeBtn_Click(object sender, RoutedEventArgs e)
-        {
-            AddContentToScreen(Convert.ToInt16((sender as Button).Content));
         }
 
         private void PlusBtn_Click(object sender, RoutedEventArgs e)
@@ -138,7 +103,15 @@ namespace calculator
 
         private void DotBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            String content = ResultLbl.Content.ToString();
+            if (!content.Contains("."))
+            {
+                ResultLbl.Content += ".";
+            }
+            else if (content[content.Length-1]=='.')
+            {
+               ResultLbl.Content = content.Substring(0, content.Length - 1);
+            }
         }
 
         private void EqualBtn_Click(object sender, RoutedEventArgs e)

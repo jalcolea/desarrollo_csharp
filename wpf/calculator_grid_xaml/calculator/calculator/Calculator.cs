@@ -12,6 +12,12 @@ namespace calculator
         private double PreviousNumber = 0;
         private List<char> ValidOperations = new List<char> {'+','-','*','/','=','%'};
 
+        public void reset ()
+        {
+            LastOperation = ' ';
+            PreviousNumber = 0;
+        }
+
         public double calculate (double number, char type)
         {
             
