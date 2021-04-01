@@ -118,5 +118,43 @@ namespace calculator
         {
             Operation(((Button)sender).Content.ToString()[0]);
         }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.D0:
+                    this.NumberBtn_Click(this.ZeroBtn, new RoutedEventArgs());
+                    break;
+                case Key.D1:
+                    this.NumberBtn_Click(this.OneBtn, new RoutedEventArgs());
+                    break;
+                case Key.D2:
+                    this.NumberBtn_Click(this.TwoBtn, new RoutedEventArgs());
+                    break;
+                case Key.D3:
+                    this.NumberBtn_Click(this.ThreeBtn, new RoutedEventArgs());
+                    break;
+                case Key.D4:
+                    this.NumberBtn_Click(this.FourBtn, new RoutedEventArgs());
+                    break;
+                case Key.D5:
+                    this.NumberBtn_Click(this.FiveBtn, new RoutedEventArgs());
+                    break;
+                case Key.D6:
+                    this.NumberBtn_Click(this.SixBtn, new RoutedEventArgs());
+                    break;
+                case Key.D7:
+                    this.NumberBtn_Click(this.SevenBtn, new RoutedEventArgs());
+                    break;
+                case Key.D8:
+                    this.NumberBtn_Click(this.EigthBtn, new RoutedEventArgs());
+                    break;
+                case Key.D9:
+                    this.NumberBtn_Click(this.NineBtn, new RoutedEventArgs());
+                    break;
+            }
+
+        }
     }
 }
