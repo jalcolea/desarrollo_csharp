@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Globalization;
 using System.Threading;
+using System.Diagnostics;
 
 namespace calculator
 {
@@ -46,6 +47,7 @@ namespace calculator
             {Key.D8,this.EigthBtn},
             {Key.D9,this.NineBtn}
         };
+
         }
 
         private void Operation (char type)
@@ -137,10 +139,30 @@ namespace calculator
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+            Debug.WriteLine(e.Key.ToString());
             if (KeyButton.ContainsKey(e.Key))
             {
                 this.NumberBtn_Click(KeyButton[e.Key], new RoutedEventArgs());
             }
+/*
+            else
+            {
+                switch (e.Key)
+                {
+                    case Key.OemPlus:
+                        this.PlusBtn_Click(null, null);
+                        break;
+                    case Key.OemMinus:
+                        this.MinusBtn_Click(null, null);
+                        break;
+                }
+            }
+*/
+            //{Key.Divide,this.DivisionBtn},
+            //{Key.Multiply,this.MultiplicationBtn},
+            //TODO: ver la manera de detectar mays divide o mays mult
+//            { Key.OemPlus,this.PlusBtn},
+//            { Key.OemMinus,this.MinusBtn}
         }
     }
 }
